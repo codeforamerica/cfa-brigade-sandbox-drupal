@@ -2388,7 +2388,7 @@ function file_directory_temp() {
       $directories[] = 'c:\\winnt\\temp';
     }
     else {
-      $directories[] = '/tmp';
+      $directories[] = $_SERVER['DOCUMENT_ROOT'].'/tmp';
     }
     // PHP may be able to find an alternative tmp directory.
     // This function exists in PHP 5 >= 5.2.1, but Drupal
